@@ -59,7 +59,7 @@ kafka/topic/delete:
 	docker exec -it docker_kafka_1 kafka-topics.sh --bootstrap-server kafka:9092 --delete --topic ${topic_name}
 
 
-## kafka/topic/configs entity_name=$1 max_msg_bytes=$2
+## kafka/topic/configs entity_name=$1 max_msg_bytes=$2: Config max.message.bytes in topic
 .PHONY: kafka/topic/configs
 kafka/topic/configs:
 	@echo 'Configure messages size in kafka topic'
